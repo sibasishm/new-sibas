@@ -1,13 +1,15 @@
 ---
-
+import Layout from '@/layouts/Layout.astro';
 ---
 
-<h1>Welcome to Astro!</h1>
-<div>
-  <p>
-    This is a simple Astro page. You can start building your site by editing the files in the <code>src/pages</code> directory.
-  </p>
-  <p>
-    For more information, check out the <a href="https://docs.astro.build">Astro documentation</a>.
-  </p>
-</div>
+<Layout>
+  <h1 class="text-4xl text-caution font-title">Welcome to Astro!</h1>
+  <div class="mt-4 text-xl">
+    <p>
+      This is a simple Astro page. You can start building your site by editing the files in the <code>src/pages</code> directory.
+    </p>
+    <p>
+      For more information, check out the <a href="https://docs.astro.build" class="text-tip">Astro documentation</a>.
+    </p>
+  </div>
+</Layout>
