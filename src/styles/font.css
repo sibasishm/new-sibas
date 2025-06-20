@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Unbounded';
+  src: url("/fonts/Unbounded.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/Uncut/UncutSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/Uncut/UncutSans-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/Uncut/UncutSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/Uncut/UncutSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+  }
