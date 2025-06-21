@@ -41,7 +41,7 @@ export default defineConfig({
       title: ['Unbounded', 'ui-sans-serif', 'system-ui', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
       serif: ['ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
       sans: ['UncutSans', 'ui-sans-serif', 'system-ui', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
-      mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
+      mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
     },
   },
   rules: [

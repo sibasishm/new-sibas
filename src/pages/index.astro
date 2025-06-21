@@ -3,13 +3,29 @@ import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout>
-  <h1 class="text-4xl text-caution font-title">Welcome to Astro!</h1>
-  <div class="mt-4 text-xl">
-    <p>
-      This is a simple Astro page. You can start building your site by editing the files in the <code>src/pages</code> directory.
-    </p>
-    <p>
-      For more information, check out the <a href="https://docs.astro.build" class="text-tip">Astro documentation</a>.
-    </p>
-  </div>
+  <!-- Hero -->
+  <section class="px-4 py-10 md:py-20 sm:px-6 sm:py-16">
+    <div class="relative mx-auto max-w-2xl">
+      <div class="relative text-center sm:text-left">
+        <h1 class="text-3xl font-bold tracking-tight lg:text-6xl md:text-5xl sm:text-4xl">
+          <span class="block font-title">everything else</span>
+          <span class="mt-1 block text-secondary font-semibold">by Sibasish Mohanty</span>
+        </h1>
+        <p class="mx-auto mt-4 max-w-xl text-base text-secondary leading-relaxed sm:mx-0 md:mt-8 sm:mt-6 sm:text-lg">
+          Welcome to my corner of the internet, not just pixels and pull requests. This is where I write everything else that moves me, Everything I can&apos;t put on a resume&ndash;ideas, rants, side quests, and half-finished thoughts.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3 md:mt-10 sm:mt-8 sm:justify-start md:gap-6 sm:gap-4">
+          <a
+            href="/about"
+            class="relative min-h-[44px] inline-flex items-center gap-2 text-sm text-zinc-900 font-medium"
+          >
+            <span>More about me</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>

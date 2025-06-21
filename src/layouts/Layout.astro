@@ -1,5 +1,5 @@
 ---
-import {themeConfig} from '@/config'
+import { themeConfig } from '@/config'
 import Head from '@/layouts/Head.astro'
 
 import '@/styles/font.css'
@@ -17,20 +17,18 @@ const isPost = Astro.url.pathname.startsWith('/posts/')
 >
   <Head />
   <body>
-    <div
-      class="mx-auto max-w-205.848 min-h-vh w-full min-h-dvh px-[min(7.25vw,3.731rem)] py-10 lg:(mx-[max(5.75rem,calc(50vw-34.25rem))] my-20 max-w-[min(calc(75vw-16rem),44rem)] min-h-full p-0)"
-    >
-      <main>
+    <div class="mx-auto max-w-3xl w-full px-4 sm:px-6">
+      <main class="py-12">
         <slot />
       </main>
-      <footer class="mt-10 text-center text-sm text-secondary">
+      <!-- <footer class="mt-10 text-center text-sm text-secondary">
         <p>
           &copy; {new Date().getFullYear()} Your Name. All rights reserved.
         </p>
         <p>
           Built with <a href="https://astro.build" class="text-secondary">Astro</a>.
         </p>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>
