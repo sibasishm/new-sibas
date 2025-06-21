@@ -7,7 +7,7 @@
   "repository": "https://github.com/sibasishm/new-sibas",
   "scripts": {
     "dev": "astro check && astro dev",
-    "build": "astro check && astro build && pnpm generate-lqip && pnpm apply-lqip",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
