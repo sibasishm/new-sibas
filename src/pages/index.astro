@@ -4,26 +4,125 @@ import Layout from '@/layouts/Layout.astro';
 
 <Layout>
   <!-- Hero -->
-  <section class="py-10 md:py-20 sm:px-6 sm:py-16">
-    <div class="relative mx-auto max-w-2xl">
-        <h1 class="text-3xl font-bold tracking-tight lg:text-6xl md:text-5xl sm:text-4xl">
-          <span class="block font-title italic">everything else</span>
-          <span class="mt-1 block text-secondary font-semibold">by Sibasish Mohanty</span>
-        </h1>
-        <p class="mx-auto mt-4 max-w-xl text-secondary leading-relaxed sm:mx-0 md:mt-8 sm:mt-6 sm:text-lg">
-          Welcome to my corner of the internet, not just pixels and pull requests. This is where I write everything else that moves me, Everything I can&apos;t put on a resume&ndash;ideas, rants, side quests, and half-finished thoughts.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3 md:mt-10 sm:mt-8 sm:justify-start md:gap-6 sm:gap-4">
-          <a
-            href="/about"
-            class="relative min-h-[44px] inline-flex items-center gap-2 text-sm text-zinc-900 font-medium"
-          >
-            <span>More about me</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
-        </div>
+  <section class="max-w-3xl">
+    <h1 class="text-balance text-3xl font-bold tracking-tight lg:text-7xl md:text-6xl sm:text-5xl">
+      <span class="block font-title italic">everything else</span>
+      <span class="mt-1 block text-secondary font-semibold">by Sibasish Mohanty</span>
+    </h1>
+    <p class="mx-auto mt-4 text-pretty text-sm text-secondary leading-relaxed sm:mx-0 md:mt-8 sm:mt-6 sm:text-lg">
+      Welcome to my corner of the internet&ndash;not just pixels and pull requests. This is where I write <span class="text-primary italic">everything else</span> that moves me: ideas, rants, side quests, and half-finished thoughts&ndash;everything I can't put on a résumé.
+    </p>
+    <div class="mt-6 flex flex-wrap gap-3 md:mt-10 sm:mt-8 sm:justify-start md:gap-6 sm:gap-4">
+      <a
+        href="/about"
+        class="min-h-[44px] inline-flex items-center gap-2 text-sm text-zinc-900 font-medium"
+      >
+        <span>More about me</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>
+      </a>
     </div>
   </section>
+  <!-- End Hero -->
+  <section class="grid grid-cols-1 mt-8 md:mt-12 gap-6 md:grid-cols-3 min-h-screen">
+    <!-- Posts List -->
+    <div class="md:col-span-2">
+      <h2 class="text-xl font-semibold font-title">Latest Posts</h2>
+      <p class="mt-1 md:mt-2 text-sm text-secondary">Here are some of my latest posts. Feel free to explore!</p>
+      <ul class="mt-6 space-y-4">
+        <li>
+          <a href="/posts/post-1" class="text-lg text-primary hover:underline">Post Title 1</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-1" class="text-lg text-primary hover:underline">Post Title 1</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-1" class="text-lg text-primary hover:underline">Post Title 1</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <li>
+          <a href="/posts/post-2" class="text-lg text-primary hover:underline">Post Title 2</a>
+          <p class="text-sm text-secondary">A brief description of the post goes here.</p>
+        </li>
+        <!-- Add more posts as needed -->
+      </ul>
+    </div>
+    <!-- Categories and Tags -->
+    <div class="md:col-span-1 md:sticky md:top-8 self-start">
+      <h2 class="mb-4 text-xl font-semibold font-title">Categories</h2>
+      <ul class="space-y-2">
+        <li class="flex items-center justify-between bg-background p-2"><a href="/categories/category-1" class="text-secondary hover:underline">Category 1</a></li>
+        <li class="flex items-center justify-between bg-background p-2"><a href="/categories/category-2" class="text-secondary hover:underline">Category 2</a></li>
+      </ul>
+      <h2 class="mb-4 mt-6 text-xl font-semibold font-title">Tags</h2>
+      <ul class="flex flex-row gap-x-2">
+        <li class="rounded-full bg-background p-2"><a href="/tags/tag-1" class="text-secondary hover:underline">Tag 1</a></li>
+        <li class="rounded-full bg-background p-2"><a href="/tags/tag-2" class="text-secondary hover:underline">Tag 2</a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Posts List -->
 </Layout>
