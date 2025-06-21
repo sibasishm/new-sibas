@@ -13,7 +13,7 @@ export interface ThemeConfig {
       background: string
       highlight: string
     }
-  },
+  }
   global: {
     fontStyle: 'sans' | 'serif' | 'mono'
   }
