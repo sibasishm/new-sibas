@@ -8,9 +8,9 @@ export const themeConfig: ThemeConfig = {
       primary: 'oklch(25% 0.005 298)',
       // used for post text
       secondary: 'oklch(40% 0.005 298)',
-      background: 'oklch(96% 0.005 298)',
+      background: 'oklch(98.5% 0.001 106.423)',
       // used for navbar, selected text, etc
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)',
+      highlight: 'oklch(66.7% 0.295 322.15 / 0.5)',
     },
     dark: {
       primary: 'oklch(92% 0.005 298)',

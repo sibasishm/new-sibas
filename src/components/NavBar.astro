@@ -1,0 +1,46 @@
+---
+const isPostActive = Astro.url.pathname.startsWith('/posts/') || Astro.url.pathname === '/'
+const isTagActive = Astro.url.pathname.startsWith('/tags/')
+const isAboutActive = Astro.url.pathname.startsWith('/about/')
+
+function getNavItemClass(isActive: boolean) {
+  return isActive
+    ? 'highlight-static c-primary font-bold after:bottom-0.1em'
+    : 'highlight-hover transition-[colors,font-weight] after:bottom-0.1em hover:(c-primary font-bold)'
+}
+
+const navItems = [
+  {
+    href: '/',
+    label: 'sibas.in',
+    className: getNavItemClass(isPostActive),
+  },
+  {
+    href: '/tags/',
+    label: 'Tags',
+    className: getNavItemClass(isTagActive),
+  },
+  {
+    href: '/about/',
+    label: 'About',
+    className: getNavItemClass(isAboutActive),
+  },
+]
+---
+
+<nav
+  aria-label="Site Navigation"
+>
+  <ul class="flex flex-row items-start justify-between gap-4">
+    {navItems.map(item => (
+      <li class="text-sm font-semibold lowercase md:tracking-wider md:text-base">
+        <a
+          href={item.href}
+          class={item.className}
+        >
+          {item.label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>

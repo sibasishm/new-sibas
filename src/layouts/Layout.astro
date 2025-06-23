@@ -1,7 +1,9 @@
 ---
 import { themeConfig } from '@/config'
 import Head from '@/layouts/Head.astro'
+import NavBar from '@/components/NavBar.astro'
 
+import '@/styles/globals.css'
 import '@/styles/font.css'
 
 const fontStyle = themeConfig.global.fontStyle === 'serif' ? 'font-serif' : 'font-sans'
@@ -18,25 +20,21 @@ const isPost = Astro.url.pathname.startsWith('/posts/')
   <Head />
   <body>
     <div class="mx-auto max-w-4xl w-full px-4 sm:px-6">
-      <div class="mt-8 flex items-center justify-between text-sm text-secondary font-medium lowercase">
-        <nav class="flex items-start justify-between gap-4">
-          <a href="/">sibas.in</a>
-          <a href="/about">About</a>
-          <a href="/thoughts">Thoughts</a>
-        </nav>
+      <header class="mt-8 flex items-center justify-between">
+        <NavBar />
         <div>Theme</div>
-      </div>
+      </header>
       <main class="py-8 md:py-12">
         <slot />
       </main>
-      <!-- <footer class="mt-10 text-center text-sm text-secondary">
+      <footer class="mt-10 text-center text-sm text-secondary">
         <p>
           &copy; {new Date().getFullYear()} Your Name. All rights reserved.
         </p>
         <p>
           Built with <a href="https://astro.build" class="text-secondary">Astro</a>.
         </p>
-      </footer> -->
+      </footer>
     </div>
   </body>
 </html>
